@@ -15,8 +15,8 @@ import ShopCard from "../ShopCard/ShopCard";
 
 const ShopMainLayout = () => {
   return (
-    <div className="max-w-6xl mx-auto py-20 ">
-      <div className="flex flex-row-reverse items-start gap-x-10 font-poppins">
+    <div className="max-w-6xl mx-auto py-20 lg:px-0 px-4">
+      <div className="flex lg:flex-row-reverse flex-col items-start gap-x-10 font-poppins">
         <div className="flex flex-col w-full">
           <h1 className="font-semibold text-xl pb-4">
             Nieuwe kortingcodes uit de maand Mei 2024
@@ -24,7 +24,7 @@ const ShopMainLayout = () => {
           <div className="">
             {[1, 2, 3, 4, 5, 6, 7]?.map((_, index) => (
               <div key={index} className="mb-5">
-                <ShopCard badge={index === 6 ? "bg-[#F4485D]" : "bg-[#16AE65]"}/>
+                <ShopCard badge={index === 6n ? "bg-[#F4485D]" : "bg-[#16AE65]"}/>
               </div>
             ))}
           </div>
@@ -36,7 +36,7 @@ const ShopMainLayout = () => {
           </div>
         </div>
 
-        <div className="w-[50%] ">
+        <div className="lg:w-[50%] w-full">
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-col items-center gap-y-4 bg-white border border-[#F2F2F2] shadow p-[20px] rounded-[20px]">
               <Image

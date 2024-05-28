@@ -7,8 +7,8 @@ import { CiCircleCheck } from "react-icons/ci";
 const ShopCard = ({badge}) => {
   return (
     <div className="max-w-3xl w-full  bg-white shadow  p-[20px] rounded-xl">
-      <div className="flex items-center justify-between">
-        <div className="flex items-start  gap-x-6">
+      <div className="flex lg:flex-row flex-col lg:items-center items-start gap-y-6 justify-between">
+        <div className="flex lg:flex-row flex-col items-start  gap-x-6 gap-y-3">
           <Image
             className="w-32 h-auto object-cover rounded-lg"
             src={pricing}
